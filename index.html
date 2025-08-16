@@ -1,161 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Personal Website</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
-      background-color: #0d1b2a;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80')
-        no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
-
-    header h1 {
-      font-size: 4rem;
-      margin: 0;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-    }
-
-    header p {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      max-width: 700px;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1rem;
-      z-index: 10;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #90ee90;
-    }
-
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    #about {
-      background: linear-gradient(135deg, #0d1b2a, #1b4332);
-    }
-
-    #about h2, #contact h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    #about p {
-      font-size: 1.2rem;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.8;
-    }
-
-    #contact {
-      background: linear-gradient(135deg, #1b4332, #0d1b2a);
-    }
-
-    form {
-      max-width: 600px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    input, textarea {
-      padding: 15px;
-      margin: 10px 0;
-      border: none;
-      border-radius: 10px;
-      font-size: 1rem;
-    }
-
-    button {
-      background: #90ee90;
-      border: none;
-      padding: 15px;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #66bb6a;
-    }
-
-    footer {
-      background: #0b132b;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
+  <!-- Navbar -->
   <header>
-    <h1>Welcome to My World</h1>
-    <p>Finding calm in nature, balance in life, and inspiration in every moment.</p>
+    <nav>
+      <h1 class="logo">My Blog</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="about">
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to My World</h2>
+    <p>Sharing thoughts, stories, and ideas inspired by nature 🌿</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
     <h2>About Me</h2>
     <p>
-      Hi, I’m Anish Kulkarni. I believe in living a mindful life, inspired by nature and its
-      harmony. This space is where I share my thoughts, ideas, and moments that bring
-      calmness and joy. Whether it’s the sound of water, the whisper of leaves, or the
-      energy of new beginnings — you’ll find it here.
+      Hi! I’m someone who loves writing, nature, and exploring new ideas.  
+      This blog is my little space on the internet to share my journey and connect with like-minded people.
     </p>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    © 2025 My Personal Website | Made with 🌿 & 🌊
-  </footer>
-</body>
-</html>
+  <!-- Blog Section -->
+  <section id="blog" class="blog">
+    <h2>Latest Posts</h2>
+    <div class="blog-container">
+      <!-- Blog posts will auto-fill here -->
+      <div class="post">
+        <h3>Sample Blog Title</h3>
+        <p>A short preview of the blog post will go here...</p>
+        <a href="#">Read More →</a>
+      </div>
+      <div class="post">
+        <h3>Another Post</h3>
